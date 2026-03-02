@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site Moderno</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #4e73df, #1cc88a);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      background-color: white;
+      color: #4e73df;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #f8f9fc;
+      transform: scale(1.05);
+    }
+
+    section {
+      background: white;
+      color: #333;
+      padding: 40px 20px;
+      border-radius: 20px 20px 0 0;
+      margin-top: 40px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #f8f9fc;
+      padding: 20px;
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      padding: 20px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meu Site</h1>
+    <p>Um exemplo simples em HTML, CSS e JavaScript</p>
+    <button class="btn" onclick="mostrarMensagem()">Clique Aqui</button>
+  </header>
+
+  <section>
+    <h2>Sobre</h2>
+    <p>Este é um site de exemplo com layout moderno e interatividade.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Projeto 1</h3>
+        <p>Descrição simples do projeto.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 2</h3>
+        <p>Descrição simples do projeto.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 3</h3>
+        <p>Descrição simples do projeto.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 - Meu Site | Desenvolvido com HTML, CSS e JS
+  </footer>
+
+  <script>
+    function mostrarMensagem() {
+      alert("Você clicou no botão! 🚀");
+    }
+  </script>
+
+</body>
+</html>
